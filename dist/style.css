@@ -1,0 +1,38 @@
+body{
+    background-image: url("img/pizza-main.jpg");
+}
+
+.nav-item{
+    color: white;
+    font-size: 20px
+}
+
+.nav {
+    justify-content: space-around;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.navbar img {
+    width: 160px;
+    position: absolute;
+    top: 14px;
+}
+
+.content{
+    background-color: #ffffffeb;
+    margin: 200px auto;
+    width: 600px;
+    height: 100px;
+}
+
+.content div{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content p{
+    text-align: center;
+    margin-top: 10px;
+}
