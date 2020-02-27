@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "simple restaurant page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeEnne/Restaurant-Page.git"
+  },
+  "author": "Felipe Enne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FelipeEnne/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/FelipeEnne/Restaurant-Page#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
