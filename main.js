@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/homePage.js":
+/*!*************************!*\
+  !*** ./src/homePage.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst homeContent = document.querySelector(\"#content\");\r\n\r\nhomeContent.innerHTML = '';\r\n\r\nhomeContent.setAttribute(\"class\", \"content-home\");\r\n\r\nconst addTitle = (title) => {\r\n    let text = document.createElement(\"div\");\r\n    text.innerHTML = title;\r\n\r\n    return text\r\n}\r\n\r\nconst addParagraph = (p) => {\r\n    let text = document.createElement(\"p\");\r\n    text.innerHTML = p;\r\n\r\n    return text\r\n}\r\n\r\nconst showHome = () => {\r\n    const title = addTitle(\"Pizza Dream\");\r\n    const p = addParagraph(\"Our Pizza is always warm with lots of flavor that will surprise you. Lectus phasellus tristique cras interdum at dictumst luctus, mollis aptent tincidunt lorem ad ligula curae, morbi purus ut cubilia pellentesque platea. consectetur justo faucibus sociosqu aliquet aenean conubia ultrices hendrerit hac, non lacinia leo felis condimentum\");\r\n\r\n    homeContent.appendChild(title);\r\n    homeContent.appendChild(p);\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (showHome);\n\n//# sourceURL=webpack:///./src/homePage.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"hey man\")\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homePage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homePage */ \"./src/homePage.js\");\n\r\n\r\n\r\nconst homeNav = document.querySelector(\"#home-nav\");\r\n\r\n\r\nObject(_homePage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
