@@ -1,10 +1,10 @@
-body{
+body {
     background-image: url("img/pizza-main.jpg");
 }
 
-.nav-item{
+.nav-item {
     color: white;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .nav {
@@ -19,7 +19,7 @@ body{
     top: 14px;
 }
 
-.content-home{
+.content-home {
     border-style: double;
     border-width: 10px;
     border-color: #848611;
@@ -28,15 +28,38 @@ body{
     margin: 235px auto 10px;
     width: 80%;
     height: 155px;
+    text-align: center;
 }
 
-.content-home div{
-    text-align: center;
+.content-home div {
     font-size: 20px;
     font-weight: bold;
 }
 
-.content-home p{
-    text-align: center;
+.content-home p {
     margin-top: 10px;
+}
+
+.content-menu {
+    border-style: double;
+    border-width: 10px;
+    border-color: #848611;
+    border-radius: 17px;
+    background-color: #ffffffeb;
+    margin: 235px auto 10px;
+    width: 80%;
+    text-align: center;
+}
+.content-menu h1{
+  margin-bottom: 50px;
+}
+
+.content-pizza {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-menu img {
+    width: 350px;
+    margin-bottom: 30px;
 }
