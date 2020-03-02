@@ -299,7 +299,8 @@ const showMenu = () => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 const setup = (content) => {
-  undefined.content.innerHTML = '';
+  // eslint-disable-next-line no-param-reassign
+  content.innerHTML = '';
   content.setAttribute('class', '');
 };
 
