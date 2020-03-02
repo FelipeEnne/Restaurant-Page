@@ -1,5 +1,6 @@
 const setup = (content) => {
-  this.content.innerHTML = '';
+  // eslint-disable-next-line no-param-reassign
+  content.innerHTML = '';
   content.setAttribute('class', '');
 };
 
