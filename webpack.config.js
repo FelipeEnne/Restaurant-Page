@@ -1,5 +1,7 @@
 const path = require('path');
+// eslint-disable-next-line import/no-unresolved
 const webpack = require('webpack');
+// eslint-disable-next-line import/no-unresolved
 const Stylish = require('webpack-stylish');
 
 
