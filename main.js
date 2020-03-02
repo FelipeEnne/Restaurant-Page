@@ -94,7 +94,47 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _setup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setup */ \"./src/setup.js\");\n\r\n\r\nconst contactContent = document.querySelector(\"#content\");\r\n\r\nconst contactInfo = [\r\n    [\"Email: pizzadream@company.com\"],\r\n    [\"Phone: 555.555.5555\"],\r\n    [\"Address: 123 pizzadream 100, SP\"]\r\n];\r\n\r\nconst addTitle = title => {\r\n  let text = document.createElement(\"h1\");\r\n  text.innerHTML = title;\r\n\r\n  return text;\r\n};\r\n\r\nconst addinfo = info => {\r\n  let text = document.createElement(\"h2\");\r\n  text.innerHTML = info;\r\n\r\n  return text;\r\n};\r\n\r\nconst showContact = () => {\r\n  Object(_setup__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(contactContent);\r\n  contactContent.setAttribute(\"class\", \"content-contact\");\r\n\r\n  const title = addTitle(\"Contact Us\");\r\n  contactContent.appendChild(title);\r\n\r\n  const info = addinfo(\"Email: pizzadream@company.com\");\r\n\r\n  for (let i = 0; i <= contactInfo.length - 1; i++) {\r\n    let info = addinfo(contactInfo[i]);\r\n    contactContent.appendChild(info);\r\n  }\r\n\r\n\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (showContact);\r\n\n\n//# sourceURL=webpack:///./src/contactPage.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _setup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setup */ "./src/setup.js");
+
+
+const contactContent = document.querySelector('#content');
+
+const contactInfo = [
+  ['Email: pizzadream@company.com'],
+  ['Phone: 555.555.5555'],
+  ['Address: 123 pizzadream 100, SP'],
+];
+
+const addTitle = (title) => {
+  const text = document.createElement('h1');
+  text.innerHTML = title;
+
+  return text;
+};
+
+const addinfo = (info) => {
+  const text = document.createElement('h2');
+  text.innerHTML = info;
+
+  return text;
+};
+
+const showContact = () => {
+  Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])(contactContent);
+  contactContent.setAttribute('class', 'content-contact');
+
+  const title = addTitle('Contact Us');
+  contactContent.appendChild(title);
+
+  for (let i = 0; i <= contactInfo.length - 1; i += 1) {
+    const info = addinfo(contactInfo[i]);
+    contactContent.appendChild(info);
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (showContact);
+
 
 /***/ }),
 
@@ -106,7 +146,41 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _set
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _setup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setup */ \"./src/setup.js\");\n\r\n\r\nconst homeContent = document.querySelector(\"#content\");\r\n\r\nconst addTitle = title => {\r\n  let text = document.createElement(\"div\");\r\n  text.innerHTML = title;\r\n\r\n  return text;\r\n};\r\n\r\nconst addParagraph = p => {\r\n  let text = document.createElement(\"p\");\r\n  text.innerHTML = p;\r\n\r\n  return text;\r\n};\r\n\r\nconst showHome = () => {\r\n  Object(_setup__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(homeContent);\r\n  homeContent.setAttribute(\"class\", \"content-home\");\r\n\r\n  const title = addTitle(\"Pizza Dream\");\r\n  const p = addParagraph(\r\n    \"Our Pizza is always warm with lots of flavor that will surprise you. Lectus phasellus tristique cras interdum at dictumst luctus, mollis aptent tincidunt lorem ad ligula curae, morbi purus ut cubilia pellentesque platea. consectetur justo faucibus sociosqu aliquet aenean conubia ultrices hendrerit hac, non lacinia leo felis condimentum\"\r\n  );\r\n\r\n  homeContent.appendChild(title);\r\n  homeContent.appendChild(p);\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (showHome);\r\n\n\n//# sourceURL=webpack:///./src/homePage.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _setup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setup */ "./src/setup.js");
+
+
+const homeContent = document.querySelector('#content');
+
+const addTitle = (title) => {
+  const text = document.createElement('div');
+  text.innerHTML = title;
+
+  return text;
+};
+
+const addParagraph = (p) => {
+  const text = document.createElement('p');
+  text.innerHTML = p;
+
+  return text;
+};
+
+const showHome = () => {
+  Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])(homeContent);
+  homeContent.setAttribute('class', 'content-home');
+
+  const title = addTitle('Pizza Dream');
+  const p = addParagraph(
+    'Our Pizza is always warm with lots of flavor that will surprise you. Lectus phasellus tristique cras interdum at dictumst luctus, mollis aptent tincidunt lorem ad ligula curae, morbi purus ut cubilia pellentesque platea. consectetur justo faucibus sociosqu aliquet aenean conubia ultrices hendrerit hac, non lacinia leo felis condimentum',
+  );
+
+  homeContent.appendChild(title);
+  homeContent.appendChild(p);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (showHome);
+
 
 /***/ }),
 
@@ -118,7 +192,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _set
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homePage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homePage */ \"./src/homePage.js\");\n/* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuPage */ \"./src/menuPage.js\");\n/* harmony import */ var _contactPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactPage */ \"./src/contactPage.js\");\n\r\n\r\n\r\n\r\nconst homeNav = document.querySelector(\"#home-nav\");\r\nconst menuNav = document.querySelector(\"#menu-nav\");\r\nconst contactNav = document.querySelector(\"#contact-nav\");\r\n\r\nObject(_homePage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\n\r\nhomeNav.addEventListener('click', function() {\r\n    Object(_homePage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n});\r\n\r\nmenuNav.addEventListener('click', function() {\r\n    Object(_menuPage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n});\r\n\r\ncontactNav.addEventListener('click', function() {\r\n    Object(_contactPage__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _homePage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homePage */ "./src/homePage.js");
+/* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuPage */ "./src/menuPage.js");
+/* harmony import */ var _contactPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactPage */ "./src/contactPage.js");
+
+
+
+
+const homeNav = document.querySelector('#home-nav');
+const menuNav = document.querySelector('#menu-nav');
+const contactNav = document.querySelector('#contact-nav');
+
+Object(_homePage__WEBPACK_IMPORTED_MODULE_0__["default"])();
+
+
+homeNav.addEventListener('click', () => {
+  Object(_homePage__WEBPACK_IMPORTED_MODULE_0__["default"])();
+});
+
+menuNav.addEventListener('click', () => {
+  Object(_menuPage__WEBPACK_IMPORTED_MODULE_1__["default"])();
+});
+
+contactNav.addEventListener('click', () => {
+  Object(_contactPage__WEBPACK_IMPORTED_MODULE_2__["default"])();
+});
+
 
 /***/ }),
 
@@ -130,7 +230,62 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _setup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setup */ \"./src/setup.js\");\n\r\n\r\nconst menuContent = document.querySelector(\"#content\");\r\n\r\nconst pizzaInfo = [\r\n  [\"Pepperoni\", \"img/pepperoni.jpg\", \"pepperoni\"],\r\n  [\"Margherita\", \"img/margherita.jpg\", \"margherita\"],\r\n  [\"Mozzarella\", \"img/mozzarella.jpg\", \"mozzarella\"],\r\n  [\"napolitan\", \"img/napolitan.jpg\", \"napolitan\"]\r\n];\r\n\r\nconst addTitle = title => {\r\n  let text = document.createElement(\"h1\");\r\n  text.innerHTML = title;\r\n\r\n  return text;\r\n};\r\n\r\nconst addPizza = (title, src, alt) => {\r\n  let div = document.createElement(\"div\");\r\n\r\n  let h2 = document.createElement(\"h2\");\r\n  let image = document.createElement(\"img\");\r\n\r\n  h2.innerHTML = title;\r\n  image.setAttribute(\"src\", src);\r\n  image.setAttribute(\"alt\", alt);\r\n\r\n  div.appendChild(h2);\r\n  div.appendChild(image);\r\n\r\n  return div;\r\n};\r\n\r\nconst showMenu = () => {\r\n  Object(_setup__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(menuContent);\r\n  menuContent.setAttribute(\"class\", \"content-menu\");\r\n\r\n  const title = addTitle(\"Only the most traditional pizzas\");\r\n  menuContent.appendChild(title);\r\n\r\n  let div1 = document.createElement(\"div\");\r\n  div1.setAttribute(\"class\", \"content-pizza\");\r\n\r\n  for (let i = 0; i <= pizzaInfo.length - 1; i++) {\r\n    let div = addPizza(pizzaInfo[i][0], pizzaInfo[i][1], pizzaInfo[i][2]);\r\n    div1.appendChild(div);\r\n  }\r\n\r\n  menuContent.appendChild(div1);\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (showMenu);\r\n\n\n//# sourceURL=webpack:///./src/menuPage.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _setup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setup */ "./src/setup.js");
+
+
+const menuContent = document.querySelector('#content');
+
+const pizzaInfo = [
+  ['Pepperoni', 'img/pepperoni.jpg', 'pepperoni'],
+  ['Margherita', 'img/margherita.jpg', 'margherita'],
+  ['Mozzarella', 'img/mozzarella.jpg', 'mozzarella'],
+  ['napolitan', 'img/napolitan.jpg', 'napolitan'],
+];
+
+const addTitle = (title) => {
+  const text = document.createElement('h1');
+  text.innerHTML = title;
+
+  return text;
+};
+
+const addPizza = (title, src, alt) => {
+  const div = document.createElement('div');
+
+  const h2 = document.createElement('h2');
+  const image = document.createElement('img');
+
+  h2.innerHTML = title;
+  image.setAttribute('src', src);
+  image.setAttribute('alt', alt);
+
+  div.appendChild(h2);
+  div.appendChild(image);
+
+  return div;
+};
+
+const showMenu = () => {
+  Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])(menuContent);
+  menuContent.setAttribute('class', 'content-menu');
+
+  const title = addTitle('Only the most traditional pizzas');
+  menuContent.appendChild(title);
+
+  const div1 = document.createElement('div');
+  div1.setAttribute('class', 'content-pizza');
+
+  for (let i = 0; i <= pizzaInfo.length - 1; i += 1) {
+    const div = addPizza(pizzaInfo[i][0], pizzaInfo[i][1], pizzaInfo[i][2]);
+    div1.appendChild(div);
+  }
+
+  menuContent.appendChild(div1);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (showMenu);
+
 
 /***/ }),
 
@@ -142,8 +297,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _set
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst setup = content => {\r\n  content.innerHTML = \"\";\r\n  content.setAttribute(\"class\", \"\");\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (setup);\r\n\n\n//# sourceURL=webpack:///./src/setup.js?");
+__webpack_require__.r(__webpack_exports__);
+const setup = (content) => {
+  undefined.content.innerHTML = '';
+  content.setAttribute('class', '');
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (setup);
+
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=main.js.map
