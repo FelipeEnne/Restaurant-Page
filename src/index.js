@@ -1,22 +1,22 @@
-import showHome from "./homePage";
-import showMenu from "./menuPage";
-import showContact from "./contactPage";
+import showHome from './homePage';
+import showMenu from './menuPage';
+import showContact from './contactPage';
 
-const homeNav = document.querySelector("#home-nav");
-const menuNav = document.querySelector("#menu-nav");
-const contactNav = document.querySelector("#contact-nav");
+const homeNav = document.querySelector('#home-nav');
+const menuNav = document.querySelector('#menu-nav');
+const contactNav = document.querySelector('#contact-nav');
 
 showHome();
 
 
-homeNav.addEventListener('click', function() {
-    showHome();
+homeNav.addEventListener('click', () => {
+  showHome();
 });
 
-menuNav.addEventListener('click', function() {
-    showMenu();
+menuNav.addEventListener('click', () => {
+  showMenu();
 });
 
-contactNav.addEventListener('click', function() {
-    showContact();
+contactNav.addEventListener('click', () => {
+  showContact();
 });
