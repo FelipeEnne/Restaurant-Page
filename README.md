@@ -31,7 +31,7 @@ Learn DOM manipulation - dynamically rendering a simple restaurant homepage.
 Full task description: <a href="https://www.theodinproject.com/courses/javascript/lessons/restaurant-page"> Odin Project.</a>
 
 
-For a live version click [here]().
+For a live version click <a href="https://felipeenne.github.io/Restaurant-Page/"> here</a>.
 
 
 ### Built With 
