@@ -122,14 +122,17 @@ const addinfo = (info) => {
 
 const showContact = () => {
   Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])(contactContent);
-  contactContent.setAttribute('class', 'content-contact');
+  const divContent = document.createElement('div');
+  divContent.setAttribute('class', 'content-contact');
+  contactContent.appendChild(divContent);
+
 
   const title = addTitle('Contact Us');
-  contactContent.appendChild(title);
+  divContent.appendChild(title);
 
   for (let i = 0; i <= contactInfo.length - 1; i += 1) {
     const info = addinfo(contactInfo[i]);
-    contactContent.appendChild(info);
+    divContent.appendChild(info);
   }
 };
 
@@ -168,15 +171,17 @@ const addParagraph = (p) => {
 
 const showHome = () => {
   Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])(homeContent);
-  homeContent.setAttribute('class', 'content-home');
+  const divContent = document.createElement('div');
+  divContent.setAttribute('class', 'content-home');
+  homeContent.appendChild(divContent);
 
   const title = addTitle('Pizza Dream');
   const p = addParagraph(
     'Our Pizza is always warm with lots of flavor that will surprise you. Lectus phasellus tristique cras interdum at dictumst luctus, mollis aptent tincidunt lorem ad ligula curae, morbi purus ut cubilia pellentesque platea. consectetur justo faucibus sociosqu aliquet aenean conubia ultrices hendrerit hac, non lacinia leo felis condimentum',
   );
 
-  homeContent.appendChild(title);
-  homeContent.appendChild(p);
+  divContent.appendChild(title);
+  divContent.appendChild(p);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (showHome);
@@ -268,10 +273,12 @@ const addPizza = (title, src, alt) => {
 
 const showMenu = () => {
   Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])(menuContent);
-  menuContent.setAttribute('class', 'content-menu');
+  const divContent = document.createElement('div');
+  divContent.setAttribute('class', 'content-menu');
+  menuContent.appendChild(divContent);
 
   const title = addTitle('Only the most traditional pizzas');
-  menuContent.appendChild(title);
+  divContent.appendChild(title);
 
   const div1 = document.createElement('div');
   div1.setAttribute('class', 'content-pizza');
@@ -281,7 +288,7 @@ const showMenu = () => {
     div1.appendChild(div);
   }
 
-  menuContent.appendChild(div1);
+  divContent.appendChild(div1);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (showMenu);

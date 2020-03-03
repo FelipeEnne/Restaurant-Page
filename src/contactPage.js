@@ -24,14 +24,17 @@ const addinfo = (info) => {
 
 const showContact = () => {
   setup(contactContent);
-  contactContent.setAttribute('class', 'content-contact');
+  const divContent = document.createElement('div');
+  divContent.setAttribute('class', 'content-contact');
+  contactContent.appendChild(divContent);
+
 
   const title = addTitle('Contact Us');
-  contactContent.appendChild(title);
+  divContent.appendChild(title);
 
   for (let i = 0; i <= contactInfo.length - 1; i += 1) {
     const info = addinfo(contactInfo[i]);
-    contactContent.appendChild(info);
+    divContent.appendChild(info);
   }
 };
 

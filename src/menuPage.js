@@ -34,10 +34,12 @@ const addPizza = (title, src, alt) => {
 
 const showMenu = () => {
   setup(menuContent);
-  menuContent.setAttribute('class', 'content-menu');
+  const divContent = document.createElement('div');
+  divContent.setAttribute('class', 'content-menu');
+  menuContent.appendChild(divContent);
 
   const title = addTitle('Only the most traditional pizzas');
-  menuContent.appendChild(title);
+  divContent.appendChild(title);
 
   const div1 = document.createElement('div');
   div1.setAttribute('class', 'content-pizza');
@@ -47,7 +49,7 @@ const showMenu = () => {
     div1.appendChild(div);
   }
 
-  menuContent.appendChild(div1);
+  divContent.appendChild(div1);
 };
 
 export default showMenu;
