@@ -33,7 +33,7 @@ const addPizza = (title, src, alt) => {
 };
 
 const showMenu = () => {
-  setup(menuContent);
+  setup();
   const divContent = document.createElement('div');
   divContent.setAttribute('class', 'content-menu');
   menuContent.appendChild(divContent);

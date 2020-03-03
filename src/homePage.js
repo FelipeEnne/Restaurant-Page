@@ -17,7 +17,7 @@ const addParagraph = (p) => {
 };
 
 const showHome = () => {
-  setup(homeContent);
+  setup();
   const divContent = document.createElement('div');
   divContent.setAttribute('class', 'content-home');
   homeContent.appendChild(divContent);

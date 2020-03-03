@@ -121,7 +121,7 @@ const addinfo = (info) => {
 };
 
 const showContact = () => {
-  Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])(contactContent);
+  Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])();
   const divContent = document.createElement('div');
   divContent.setAttribute('class', 'content-contact');
   contactContent.appendChild(divContent);
@@ -170,7 +170,7 @@ const addParagraph = (p) => {
 };
 
 const showHome = () => {
-  Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])(homeContent);
+  Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])();
   const divContent = document.createElement('div');
   divContent.setAttribute('class', 'content-home');
   homeContent.appendChild(divContent);
@@ -201,16 +201,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _homePage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homePage */ "./src/homePage.js");
 /* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuPage */ "./src/menuPage.js");
 /* harmony import */ var _contactPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactPage */ "./src/contactPage.js");
+/* harmony import */ var _init__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./init */ "./src/init.js");
 
 
 
+
+
+Object(_init__WEBPACK_IMPORTED_MODULE_3__["default"])();
 
 const homeNav = document.querySelector('#home-nav');
 const menuNav = document.querySelector('#menu-nav');
 const contactNav = document.querySelector('#contact-nav');
 
 Object(_homePage__WEBPACK_IMPORTED_MODULE_0__["default"])();
-
 
 homeNav.addEventListener('click', () => {
   Object(_homePage__WEBPACK_IMPORTED_MODULE_0__["default"])();
@@ -223,6 +226,61 @@ menuNav.addEventListener('click', () => {
 contactNav.addEventListener('click', () => {
   Object(_contactPage__WEBPACK_IMPORTED_MODULE_2__["default"])();
 });
+
+
+/***/ }),
+
+/***/ "./src/init.js":
+/*!*********************!*\
+  !*** ./src/init.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const contentInit = document.querySelector('#content');
+
+const init = () => {
+  const navContent = document.createElement('nav');
+  navContent.setAttribute('class', 'navbar navbar-dark bg-dark');
+  navContent.setAttribute('id', 'navbar');
+  contentInit.appendChild(navContent);
+
+  const imglogo = document.createElement('img');
+  imglogo.setAttribute('src', 'img/logo.png');
+  imglogo.setAttribute('alt', 'logo');
+
+  navContent.appendChild(imglogo);
+
+  const ul = document.createElement('ul');
+  ul.setAttribute('class', 'nav');
+
+  navContent.appendChild(ul);
+
+  const liHome = document.createElement('li');
+  liHome.setAttribute('id', 'home-nav');
+  liHome.setAttribute('class', 'nav-item');
+  liHome.innerHTML = 'Home';
+
+  ul.appendChild(liHome);
+
+  const liMenu = document.createElement('li');
+  liMenu.setAttribute('id', 'menu-nav');
+  liMenu.setAttribute('class', 'nav-item');
+  liMenu.innerHTML = 'Menu';
+
+  ul.appendChild(liMenu);
+
+  const liContact = document.createElement('li');
+  liContact.setAttribute('id', 'contact-nav');
+  liContact.setAttribute('class', 'nav-item');
+  liContact.innerHTML = 'Contact';
+
+  ul.appendChild(liContact);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (init);
 
 
 /***/ }),
@@ -272,7 +330,7 @@ const addPizza = (title, src, alt) => {
 };
 
 const showMenu = () => {
-  Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])(menuContent);
+  Object(_setup__WEBPACK_IMPORTED_MODULE_0__["default"])();
   const divContent = document.createElement('div');
   divContent.setAttribute('class', 'content-menu');
   menuContent.appendChild(divContent);
@@ -305,10 +363,13 @@ const showMenu = () => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-const setup = (content) => {
+const setup = () => {
   // eslint-disable-next-line no-param-reassign
-  content.innerHTML = '';
-  content.setAttribute('class', '');
+  const nav = document.getElementById('navbar');
+
+  if (nav.nextElementSibling != null) {
+    nav.nextElementSibling.remove();
+  }
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (setup);

@@ -1,7 +1,10 @@
-const setup = (content) => {
+const setup = () => {
   // eslint-disable-next-line no-param-reassign
-  content.innerHTML = '';
-  content.setAttribute('class', '');
+  const nav = document.getElementById('navbar');
+
+  if (nav.nextElementSibling != null) {
+    nav.nextElementSibling.remove();
+  }
 };
 
 export default setup;

@@ -23,7 +23,7 @@ const addinfo = (info) => {
 };
 
 const showContact = () => {
-  setup(contactContent);
+  setup();
   const divContent = document.createElement('div');
   divContent.setAttribute('class', 'content-contact');
   contactContent.appendChild(divContent);
