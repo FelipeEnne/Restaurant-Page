@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack --watch",
-    "fix": "npx estlint . --fix"
+    "fix": "npx eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,11 @@
   },
   "homepage": "https://github.com/FelipeEnne/Restaurant-Page#readme",
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.1",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "webpack-stylish": "^0.1.8"
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "webpack": "^5.97.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {},
   "keywords": []

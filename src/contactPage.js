@@ -28,7 +28,6 @@ const showContact = () => {
   divContent.setAttribute('class', 'content-contact');
   contactContent.appendChild(divContent);
 
-
   const title = addTitle('Contact Us');
   divContent.appendChild(title);
 
